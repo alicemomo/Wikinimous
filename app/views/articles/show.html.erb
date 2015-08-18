@@ -1,0 +1,10 @@
+<%= link_to 'Wiki', articles_path %>
+
+<h1>
+  <%= @article.title %>
+  <%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_article_path %>
+  <%= link_to '<i class="fa fa-trash"></i>'.html_safe, article_path, method: :delete %>
+</h1>
+<p>
+  <%= @article.content %>
+</p>
